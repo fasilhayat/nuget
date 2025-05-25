@@ -9,7 +9,7 @@
 **node_modules/
 package-lock.json
 package.json
-
+**/*.tmp
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
@@ -350,6 +350,3 @@ MigrationBackup/
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
 
-# Fody - auto-generated XML schema
-
-**/*.tmp
