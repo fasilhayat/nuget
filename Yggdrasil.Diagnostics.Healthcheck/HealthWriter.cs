@@ -80,7 +80,7 @@ public static class HealthWriter
             entries = report.Entries.Select(dict => dict).ToDictionary(pair => pair.Key, pair => pair.Value);
         }
 
-        entries.Add("Assembly info", new HealthReportEntry(report.Status, Assembly.GetEntryAssembly()?.FullName ?? "NA", TimeSpan.Zero, null, null, new string[] { "version" }));
+        entries.Add("Assembly info", new(report!.Status, Assembly.GetEntryAssembly()?.FullName ?? "NA", TimeSpan.Zero, null, null, new string[] { "version" }));
 
         // Only get assemblies once as it is a heavy task
         if (_assemblies == null)
