@@ -27,7 +27,7 @@ public static class HealthWriter
     /// <summary>
     /// Write the Health in HealthUI format
     /// </summary>
-    /// <param name="httpContext"></param>
+    /// <param name="httpContext">The httpContext object.</param>
     /// <param name="report"></param>
     /// <returns></returns>
     public static async Task WriteHealthUiResponse(HttpContext httpContext, HealthReport? report)
