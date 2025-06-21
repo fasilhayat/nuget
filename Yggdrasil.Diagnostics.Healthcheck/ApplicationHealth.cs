@@ -17,18 +17,14 @@ public static class ApplicationHealth
     /// <param name="builder">
     /// The <see cref="WebApplicationBuilder"/> used to configure services and middleware.
     /// </param>
-    /// <returns>
-    /// The same <see cref="WebApplicationBuilder"/> instance for chaining.
-    /// </returns>
-    /// <example>
-    /// Example usage:
+    /// <returns>The same <see cref="WebApplicationBuilder"/> instance for chaining.</returns>
+    /// <example>Example usage:
     /// <code>
-    /// var builder = WebApplication.CreateBuilder(args);
-    /// builder.AddHealth(); // Adds health checks and configures the endpoint
-    ///
-    /// var app = builder.Build();
-    /// app.UseHealth();     // Maps the health check endpoint
-    /// app.Run();
+    ///     var builder = WebApplication.CreateBuilder(args);
+    ///     builder.AddHealth(); // Adds health checks and configures the endpoint
+    ///     var app = builder.Build();
+    ///     app.UseHealth();     // Maps the health check endpoint
+    ///     app.Run();
     /// </code>
     /// </example>
     public static WebApplicationBuilder AddHealth(this WebApplicationBuilder builder)
